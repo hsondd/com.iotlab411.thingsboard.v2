@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Thingsboard mobile</string>
+
+    <string-array name="planets_array">
+        <item>Nhiệt độ</item>
+        <item>Độ ẩm</item>
+        <item>Dust</item>
+    </string-array>
+
+</resources>

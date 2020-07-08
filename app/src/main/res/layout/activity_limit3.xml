@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/width10"
+    tools:context=".Limit1Activity">
+
+
+
+    <EditText
+        android:inputType="number"
+        android:layout_marginTop="@dimen/width10"
+        android:id="@+id/edt_m3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ngưỡng M3" />
+
+    <Button
+        android:layout_marginTop="@dimen/width10"
+        android:text="bắt đầu"
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

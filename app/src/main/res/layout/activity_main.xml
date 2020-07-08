@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/width10"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_device1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sensor-01" />
+
+        <Button
+            android:id="@+id/btn_device2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sensor-02" />
+        <Button
+            android:id="@+id/btn_device1.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sensor-03" />
+        <Button
+            android:id="@+id/btn_device1.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sensor-04" />
+        <Button
+            android:id="@+id/btn_device1.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sensor-05" />
+        <Button
+            android:id="@+id/btn_device1.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sensor-06" />
+        <Button
+            android:id="@+id/btn_device2.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P1-SN-061" />
+        <Button
+            android:id="@+id/btn_device2.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P1-SN-062" />
+        <Button
+            android:id="@+id/btn_device2.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P1-SN-010" />
+        <Button
+            android:id="@+id/btn_device2.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P1-SN-036" />
+
+        <Button
+            android:id="@+id/btn_device3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camera" />
+
+       <Button
+           android:background="@color/colorAccent"
+           android:layout_marginTop="@dimen/width30"
+           android:id="@+id/btn_nguong"
+           android:text="Đặt Ngưỡng"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

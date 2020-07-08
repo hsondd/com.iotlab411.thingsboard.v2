@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/value_8dp"
+    tools:context=".LimitActivity">
+
+    <EditText
+        android:id="@+id/edt_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/width30"
+        android:hint="Nhập ngưỡng nhiệt độ"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_save_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu" />
+
+    <EditText
+        android:id="@+id/edt_hum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/width10"
+        android:hint="Nhập ngưỡng độ ẩm"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_save_hum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu" />
+
+    <EditText
+        android:id="@+id/edt_m3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/width10"
+        android:hint="Nhập ngưỡng bụi"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_save_m3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu" />
+
+
+    <TextView
+        android:id="@+id/tv_max_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/width10"
+        android:text="Max Temp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_max_hum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/width10"
+        android:text="Max hum"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_max_m3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/width10"
+        android:text="Max m3"
+        android:textSize="16sp" />
+</LinearLayout>
