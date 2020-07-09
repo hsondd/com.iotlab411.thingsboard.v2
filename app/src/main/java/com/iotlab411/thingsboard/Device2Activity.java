@@ -216,8 +216,8 @@ public class Device2Activity extends AppCompatActivity implements SwipeRefreshLa
                         temperatures.addAll(response.body().getTemperature());
                         if ((maxTemp - Float.parseFloat(temperatures.get(0).getValue()) < 0) && (maxTemp != 0)) {
                             Toast.makeText(Device2Activity.this, "Cảnh báo", Toast.LENGTH_SHORT).show();
-                            Utils.dialogQuaNguong(Device2Activity.this, "Thông báo", "Nhiệt độ vượt ngưỡng");
-                            showNotification(Device2Activity.this, "Thông báo", "Nhiệt độ vượt ngưỡng", new Intent(Device2Activity.this, MainActivity.class));
+                            Utils.dialogQuaNguong(Device2Activity.this, "Thông báo", "Sensor-02: Nhiệt độ vượt ngưỡng");
+                            showNotification(Device2Activity.this, "Thông báo", "Sensor-02: Nhiệt độ vượt ngưỡng", new Intent(Device2Activity.this, MainActivity.class));
                         }
                         tempAdapter = new TempAdapter(temperatures, Device2Activity.this, new TempAdapter.OnItemClickListener() {
                             @Override
@@ -233,9 +233,9 @@ public class Device2Activity extends AppCompatActivity implements SwipeRefreshLa
                     if (response.body().getHumidity() != null && response.body().getHumidity().size() > 0) {
                         humidities.addAll(response.body().getHumidity());
                         if ((maxHum - Float.parseFloat(humidities.get(0).getValue()) < 0) && (maxHum != 0)) {
-                            Utils.dialogQuaNguong(Device2Activity.this, "Thông báo", "Độ ẩm vượt ngưỡng");
+                            Utils.dialogQuaNguong(Device2Activity.this, "Thông báo", "Sensor-02: Độ ẩm vượt ngưỡng");
                             Toast.makeText(Device2Activity.this, "Cảnh báo", Toast.LENGTH_SHORT).show();
-                            showNotification(Device2Activity.this, "Thông báo", "Độ ẩm vượt ngưỡng", new Intent(Device2Activity.this, MainActivity.class));
+                            showNotification(Device2Activity.this, "Thông báo", "Sensor-02: Độ ẩm vượt ngưỡng", new Intent(Device2Activity.this, MainActivity.class));
 
                         }
                         humidityAdapter = new HumidityAdapter(humidities, Device2Activity.this, new HumidityAdapter.OnItemClickListener() {
@@ -252,9 +252,9 @@ public class Device2Activity extends AppCompatActivity implements SwipeRefreshLa
                     if (response.body().getDust() != null && response.body().getDust().size() > 0) {
                         dusts.addAll(response.body().getDust());
                         if ((maxM3 - Float.parseFloat(dusts.get(0).getValue()) < 0) && (maxM3 != 0)) {
-                            Utils.dialogQuaNguong(Device2Activity.this, "Thông báo", "Bụi vượt ngưỡng");
+                            Utils.dialogQuaNguong(Device2Activity.this, "Thông báo", "Sensor-02: Bụi vượt ngưỡng");
                             Toast.makeText(Device2Activity.this, "Cảnh báo", Toast.LENGTH_SHORT).show();
-                            showNotification(Device2Activity.this, "Thông báo", "Bụi vượt ngưỡng", new Intent(Device2Activity.this, MainActivity.class));
+                            showNotification(Device2Activity.this, "Thông báo", "Sensor-02: Bụi vượt ngưỡng", new Intent(Device2Activity.this, MainActivity.class));
 
                         }
                         dustAdapter = new DustAdapter(dusts, Device2Activity.this, new DustAdapter.OnItemClickListener() {
